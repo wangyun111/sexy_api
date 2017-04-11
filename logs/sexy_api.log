@@ -1,0 +1,126 @@
+2017/04/10 16:46:06 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:47:28 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:47:28 [I] [main.go:10] 33554432 
+2017/04/10 16:47:28 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:49:22 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:49:22 [I] [main.go:10] 33554432 
+2017/04/10 16:49:22 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:49:33 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:49:33 [I] [main.go:10] 33554432 
+2017/04/10 16:49:33 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:49:51 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:49:51 [I] [main.go:10] 33554432 
+2017/04/10 16:49:51 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:50:47 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:50:47 [main.go:10] 111111
+2017/04/10 16:50:47 [I] [main.go:11] 33554432 
+2017/04/10 16:50:47 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:51:37 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:51:37 [main.go:10] 111111
+2017/04/10 16:51:37 [I] [main.go:11] 33554432 
+2017/04/10 16:51:37 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:51:49 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:51:49 [main.go:10] 111111
+2017/04/10 16:51:49 [I] [main.go:11] 33554432 
+2017/04/10 16:51:49 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:55:48 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:55:48 [I] [proc.go:185] 222222
+2017/04/10 16:55:48 [I] [main.go:13] 33554432 
+2017/04/10 16:55:48 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:57:51 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:57:51 [I] [proc.go:185] 222222
+2017/04/10 16:57:51 [I] [main.go:13] 33554432 
+2017/04/10 16:57:51 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:58:09 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:58:09 [I] [proc.go:185] 222222
+2017/04/10 16:58:09 [I] [main.go:13] 33554432 
+2017/04/10 16:58:09 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 16:58:31 [I] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:58:31 [I] 222222
+2017/04/10 16:58:31 [I] 33554432 
+2017/04/10 16:58:32 [I] http server Running on http://:8080
+2017/04/10 16:58:50 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 16:58:50 [I] [proc.go:185] 222222
+2017/04/10 16:58:50 [I] [main.go:13] 33554432 
+2017/04/10 16:58:50 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:02:18 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:02:18 [I] [proc.go:185] 222222
+2017/04/10 17:02:18 [I] [main.go:13] 33554432 
+2017/04/10 17:02:19 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:02:54 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:02:54 [I] [proc.go:185] 222222
+2017/04/10 17:02:54 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:08:05 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:08:06 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:08:44 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:08:44 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:08:45 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:08:45 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:09:52 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:09:52 [I] [asm_386.s:1629] xssss
+2017/04/10 17:09:52 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:10:21 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:10:21 [I] [asm_386.s:1629] xssss
+2017/04/10 17:10:21 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:10:50 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:10:50 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:11:47 [I] [router.go:239] D:\wangyun\go\go_workspace\src\sexy_api\controllers no changed
+2017/04/10 17:11:47 [I] [asm_386.s:1629] http server Running on http://:8080
+2017/04/10 17:12:51 [E] [main.go:11] 22222 
+2017/04/10 17:14:17 [E] [main.go:12] 22222 
+2017/04/10 17:14:41 [E] [main.go:12] 22222 
+2017/04/10 17:14:41 [C] [main.go:13] 33333 
+2017/04/10 17:15:04 [W] [main.go:11] json is a type of kv li 
+2017/04/10 17:15:04 [E] [main.go:12] 22222 
+2017/04/10 17:15:04 [C] [main.go:13] 33333 
+2017/04/10 17:15:11 [W] [main.go:11] json is a type of kv li 
+2017/04/10 17:15:11 [E] [main.go:12] 22222 
+2017/04/10 17:15:11 [C] [main.go:13] 33333 
+2017/04/10 17:32:39 [C] [asm_386.s:519] the request url is  /v1/admin
+2017/04/10 17:32:39 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/controller.go:578
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/base.go:12
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:775
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/10 17:32:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/10 17:33:17 [C] [asm_386.s:519] the request url is  /v1/admin
+2017/04/10 17:33:17 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/controller.go:578
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/base.go:12
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:775
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/10 17:33:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/10 17:33:21 [C] [asm_386.s:519] the request url is  /v1/admin
+2017/04/10 17:33:21 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/controller.go:578
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/base.go:12
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:775
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/10 17:33:21 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/10 17:33:49 [C] [asm_386.s:519] the request url is  /v1/admin
+2017/04/10 17:33:49 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/controller.go:578
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/base.go:12
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:775
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
