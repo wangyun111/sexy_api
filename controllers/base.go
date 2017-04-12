@@ -15,7 +15,7 @@ type BaseController struct {
 	beego.Controller
 }
 
-func (this *BaseController) Prepare() {
+func (this *BaseController) Prepare1() {
 	_cid := this.Ctx.GetCookie("cid")
 	if _cid == "" {
 		this.Data["json"] = tools.PleaseLogin()
@@ -23,7 +23,7 @@ func (this *BaseController) Prepare() {
 	}
 }
 
-func (c *BaseController) ServeJSON(encoding ...bool) {
+func (c *BaseController) ServeJSON1(encoding ...bool) {
 	beego.Info(encoding)
 	var (
 		hasIndent   = true
@@ -35,12 +35,12 @@ func (c *BaseController) ServeJSON(encoding ...bool) {
 	if len(encoding) > 0 && encoding[0] == true {
 		hasEncoding = true
 	}
-	c.JSON(c.Data["json"], hasIndent, hasEncoding)
+	c.JSON1(c.Data["json"], hasIndent, hasEncoding)
 }
 
 // JSON writes json to response body.
 // if coding is true, it converts utf-8 to \u0000 type.
-func (c *BaseController) JSON(data interface{}, hasIndent bool, coding bool) error {
+func (c *BaseController) JSON1(data interface{}, hasIndent bool, coding bool) error {
 	c.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
 	var content []byte
 	var err error

@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"encoding/json"
+	"github.com/astaxie/beego"
 	"sexy_api/models"
 	"sexy_tools/tools"
 )
@@ -122,8 +123,11 @@ func (this *AdminController) GetAll() {
 // @Failure 204 {string}   code 204
 // @router / [get]
 func (this *AdminController) Get() {
-	this.Ctx.SetCookie("cookie", "1111")
-	this.SetSession("uid", 112)
+	// this.Ctx.Output.Body([]byte("1111"))
+	beego.Info(models.Rc.Get("a"))
+	// this.Ctx.WriteString)
+	// this.Ctx.SetCookie("cookie", "1111")
+	// this.SetSession("uid", 112)
 	defer this.ServeJSON()
 	id, _ := this.GetInt64("id")
 	if id < 1 {

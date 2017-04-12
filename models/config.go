@@ -2,11 +2,15 @@ package models
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/cache"
+	_ "github.com/astaxie/beego/cache/redis"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var mysql_url string
+var mysql_url, redis_url string
+var Rc cache.Cache
+var Re error
 
 func init() {
 	runModel := beego.BConfig.RunMode
@@ -17,7 +21,9 @@ func init() {
 	mysql_url = sMap["mysql_url"]
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 	orm.RegisterDataBase("default", "mysql", mysql_url)
-
+	redis_url = beego.AppConfig.String("beego_cache")
+	Rc, Re = cache.NewCache("redis", redis_url)
+	Rc.Put("a", "123", 15)
 }
 
 type Page struct {
