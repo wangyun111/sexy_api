@@ -76,24 +76,4 @@ func StringsToJSON(str string) string {
 	return jsons
 }
 
-// func (this *BaseController) ServeJSON(_crypto ...bool) {
-// 	if len(_crypto) > 0 && _crypto[0] {
-// 		this.JSON(this.Data["json"])
-// 	} else {
-// 	}
-// }
-
-// func (this *BaseController) JSON(data interface{}) error {
-// 	this.Ctx.Output.Header("Content-Type", "application/json; charset=utf-8")
-// 	content, err := json.Marshal(data)
-// 	if err != nil {
-// 		return err
-// 	} else {
-// 		base64Str := crypto.Base64Encrypt(content)
-// 		desByte, err := crypto.DesEncrypt([]byte(base64Str), []byte("12345678"))
-// 		beego.Info(desByte, err)
-// 		return this.Ctx.Output.Body(desByte)
-// 	}
-// }
-
 func (this *BaseController) Finish() {}

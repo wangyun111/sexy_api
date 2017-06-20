@@ -3,20 +3,20 @@ package models
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"sexy_tools/tools"
+	"sexy_tools/time"
 	"strconv"
 )
 
 //会员信息
 type AdminInfo struct {
-	Id         int64  `json:"id"              description:"编号"`
+	Id         int64  `json:"-"              description:"编号"`
 	Nickname   string `json:"nickName"        description:"*昵称"`
-	Headimgurl string `json:"headimgurl"      description:"*头像"`
+	Headimgurl string `json:"headimgurl,omitempty"      description:"*头像"`
 	Name       string `json:"name"            description:"姓名"`
 	Phone      string `json:"phone"           description:"电话"`
 	Email      string `json:"email"           description:"邮箱"`
 	Address    string `json:"address"         description:"地址"`
-	Account    string `json:"account"         description:"账号"`
+	Account    string `json:"account,tel"         description:"账号"`
 	Password   string `json:"password"        description:"密码"`
 	Remark     string `json:"remark"          description:"备注(预留信息)"`
 	IsUse      string `json:"isUse"           description:"是否使用"`
@@ -28,7 +28,7 @@ func AddAdmin(_Admin *AdminInfo) (has bool, msg string) {
 	msg = "success"
 	o := orm.NewOrm()
 	_Admin.Id = 0
-	_Admin.CreateTime = tools.GetNowTime()
+	_Admin.CreateTime = time.GetNowTime()
 	_Admin.IsUse = "YES"
 	_, _err := o.Insert(_Admin)
 	if _err != nil {
@@ -107,7 +107,7 @@ func QueryAdmin(pageNo, pageSize int64, nickname, name, phone string) (has bool,
 	o := orm.NewOrm()
 	var _err error
 	var countModel CountModel
-	countSql := " select count(*) as count from sys_Admin where 1=1 "
+	countSql := " select count(*) as count from admin_info where 1=1 "
 	sql := "select id,nickname,headimgurl,name,phone,email,address,account,password,remark,is_use,create_time from admin_info where 1=1 "
 	if nickname != "" {
 		countSql += " and nickname like '%" + nickname + "%'"

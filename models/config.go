@@ -2,14 +2,13 @@ package models
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/astaxie/beego/cache"
-	_ "github.com/astaxie/beego/cache/redis"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
+	"sexy_tools/cache"
 )
 
 var mysql_url, redis_url string
-var Rc cache.Cache
+var Rc *cache.Cache
 var Re error
 
 func init() {
@@ -21,29 +20,8 @@ func init() {
 	mysql_url = sMap["mysql_url"]
 	orm.RegisterDriver("mysql", orm.DRMySQL)
 	orm.RegisterDataBase("default", "mysql", mysql_url)
-	redis_url = beego.AppConfig.String("beego_cache")
-	Rc, Re = cache.NewCache("redis", redis_url)
-	Rc.Put("a", "123", 15)
-}
-
-type Page struct {
-	PageNo     int64       `json:"pageNo"     description:"第几页"`
-	PageSize   int64       `json:"pageSize"   description:"每页多少条"`
-	TotalPage  int64       `json:"totalPage"  description:"总页数"`
-	TotalCount int64       `json:"totalCount" description:"总条数"`
-	FirstPage  bool        `json:"firstPage"  description:"是否是第一页"`
-	LastPage   bool        `json:"lastPage"   description:"是否是最后一页"`
-	List       interface{} `json:"list"       description:"内容list"`
-}
-
-type CountModel struct {
-	Count int64
-}
-
-func PageUtil(count, pageNo, pageSize int64, list interface{}) *Page {
-	tp := count / pageSize
-	if count%pageSize > 0 {
-		tp = count/pageSize + 1
-	}
-	return &Page{PageNo: pageNo, PageSize: pageSize, TotalPage: tp, TotalCount: count, FirstPage: pageNo == 1, LastPage: pageNo == tp, List: list}
+	// redis_url = beego.AppConfig.String("beego_cache")
+	// beego.Info(redis_url)
+	// Rc, Re = cache.NewCache(redis_url)
+	// beego.Info(Re)
 }

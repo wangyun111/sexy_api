@@ -124,3 +124,343 @@
 2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
 2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
 2017/04/10 17:33:49 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 14:55:38 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 14:55:38 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:107
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 14:55:38 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 14:55:38 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 14:58:32 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 14:58:32 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:107
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 14:58:32 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 14:58:32 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:00:08 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:00:08 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:00:08 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:00:08 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:01:12 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:01:12 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:01:12 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:01:12 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:02:00 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:02:00 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:02:00 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:02:00 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:03:04 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:03:04 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:03:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:03:04 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:03:24 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:03:24 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:03:24 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:03:24 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:03:44 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:03:44 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:03:44 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:03:44 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:04:04 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:04:04 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:04:04 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:04:04 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:05:22 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:05:22 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:05:22 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:05:22 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:05:42 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:05:42 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:05:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:05:42 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:06:57 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:06:57 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:06:57 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:06:57 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:07:17 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:07:17 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:07:17 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:07:17 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:08:09 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:08:09 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:08:09 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:08:09 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:11:15 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:11:15 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:11:15 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:11:15 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:11:35 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:11:35 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:11:35 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:11:35 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:12:52 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:12:52 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:108
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:12:52 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:12:52 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/04/25 15:13:30 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/04/25 15:13:30 [C] [asm_386.s:519] Handler crashed with error no reachable servers
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/mgo_config.go:26
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/activity.go:74
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:109
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/04/25 15:13:30 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/04/25 15:13:30 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/06/02 15:47:13 [C] [asm_386.s:1629] ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2017/06/02 15:48:03 [C] [asm_386.s:1629] ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2017/06/02 15:50:16 [C] [asm_386.s:519] the request url is  /v1/admin/
+2017/06/02 15:50:16 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_tools/cache/redis.go:132
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_tools/cache/redis.go:228
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/admin.go:134
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/06/02 15:50:16 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/06/02 15:50:16 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/06/02 15:50:20 [C] [asm_386.s:519] the request url is  /v1/admin/
+2017/06/02 15:50:20 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_tools/cache/redis.go:132
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_tools/cache/redis.go:228
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/admin.go:134
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/06/02 15:50:20 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/06/02 15:50:20 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/06/02 15:50:39 [C] [asm_386.s:519] the request url is  /v1/admin/
+2017/06/02 15:50:39 [C] [asm_386.s:519] Handler crashed with error <Ormer> table: `sexy_api/models.AdminInfo` not found, maybe not RegisterModel
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/orm/orm.go:110
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/orm/orm.go:167
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/models/admin.go:33
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/admin.go:35
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/06/02 15:50:39 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/06/02 15:50:39 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls
+2017/06/14 16:31:44 [C] [asm_386.s:1629] ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2017/06/14 16:52:42 [C] [asm_386.s:519] the request url is  /v1/activity/
+2017/06/14 16:52:42 [C] [asm_386.s:519] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:489
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/panic.go:63
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/signal_windows.go:161
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_tools/cache/redis.go:132
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_tools/cache/redis.go:228
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/sexy_api/controllers/activity.go:106
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:519
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:434
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/reflect/value.go:302
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_workspace/src/github.com/astaxie/beego/router.go:809
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:2568
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/net/http/server.go:1825
+2017/06/14 16:52:42 [C] [asm_386.s:519] D:/wangyun/go/go_install/src/runtime/asm_386.s:1629
+2017/06/14 16:52:42 [server.go:2751] [HTTP] http: multiple response.WriteHeader calls

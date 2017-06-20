@@ -5,6 +5,8 @@ import (
 	"github.com/astaxie/beego"
 	"sexy_api/models"
 	"sexy_tools/tools"
+	"strconv"
+	"time"
 )
 
 // 会员模块
@@ -105,6 +107,7 @@ func (this *AdminController) GetAll() {
 	name := this.GetString("name")
 	phone := this.GetString("phone")
 	has, msg, page := models.QueryAdmin(pageNo, pageSize, nickname, name, phone)
+	beego.Info(msg)
 	if has {
 		this.Data["json"] = page
 	} else {
@@ -123,26 +126,25 @@ func (this *AdminController) GetAll() {
 // @Failure 204 {string}   code 204
 // @router / [get]
 func (this *AdminController) Get() {
-	// this.Ctx.Output.Body([]byte("1111"))
-	beego.Info(models.Rc.Get("a"))
-	// this.Ctx.WriteString)
-	// this.Ctx.SetCookie("cookie", "1111")
-	// this.SetSession("uid", 112)
 	defer this.ServeJSON()
 	id, _ := this.GetInt64("id")
 	if id < 1 {
 		this.Data["json"] = tools.ParamNull()
 	} else {
-		has, msg, admin := models.FindByIdAdmin(id)
-		if has {
-			this.Data["json"] = admin
-		} else {
-			if msg != "" {
-				this.Data["json"] = tools.OperationFalseMsg(msg)
+		status := models.Rc.Lock(strconv.FormatInt(id, 10), 3*time.Second)
+		if status {
+			has, msg, admin := models.FindByIdAdmin(id)
+			if has {
+				this.Data["json"] = admin
 			} else {
-				this.Data["json"] = tools.ReturnDataNull()
+				if msg != "" {
+					this.Data["json"] = tools.OperationFalseMsg(msg)
+				} else {
+					this.Data["json"] = tools.ReturnDataNull()
+				}
 			}
-
+		} else {
+			this.Data["json"] = tools.OperationFalseMsg("请勿频繁操作")
 		}
 	}
 }
