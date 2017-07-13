@@ -120,3 +120,33 @@ CREATE TABLE `cost_relief_approve_record` (
   `create_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   PRIMARY KEY (`id`)
 )comment="审批处理记录" ENGINE=InnoDB;
+
+
+#借款续期日志
+DROP TABLE IF EXISTS `loan_renew_logs`;
+CREATE TABLE `loan_renew_logs` (
+ `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键,自增',
+ `money` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '本金',
+ `interest_fee` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '利息',
+ `service_fee` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '服务费',
+ `procedure_fee` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '手续费', 
+ `state` ENUM('NONE','FAILURE','SUCCESS') NULL DEFAULT "NONE" COMMENT '记录状态',
+ `flow` TINYINT(1) NULL DEFAULT 0 COMMENT '记录流程(走到哪一步了)',
+ `loan_id` INT(11) NULL DEFAULT 0 COMMENT '借款id',
+ `schedule_id` INT(11) NULL DEFAULT 0 COMMENT '还款记录id',
+ `create_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间', PRIMARY KEY (`id`)
+) COMMENT="借款续期日志" ENGINE=InnoDB;
+
+#工作信息
+DROP TABLE IF EXISTS `user_work_info`;
+CREATE TABLE `user_work_info` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键,自增',
+  `uid` INT(11) NULL DEFAULT 0 COMMENT '用户id',
+  `company_name` VARCHAR(1024) NULL DEFAULT 0 COMMENT '利息',
+  `work_station` VARCHAR(1024) NULL DEFAULT 0 COMMENT '服务费',
+  `income` VARCHAR(1024) NULL DEFAULT 0 COMMENT '手续费',
+  `state` VARCHAR(1024) NULL DEFAULT "NONE" COMMENT '记录状态',
+  `flow` VARCHAR(1024) NULL DEFAULT 0 COMMENT '记录流程(走到哪一步了)',
+  `company_phone` INT(11) NULL DEFAULT 0 COMMENT '借款id',
+) COMMENT="借款续期日志" ENGINE=InnoDB;
+

@@ -9,7 +9,7 @@ import (
 
 //会员信息
 type AdminInfo struct {
-	Id         int64  `json:"-"              description:"编号"`
+	Id         int64  `json:"-"               description:"编号"`
 	Nickname   string `json:"nickName"        description:"*昵称"`
 	Headimgurl string `json:"headimgurl,omitempty"      description:"*头像"`
 	Name       string `json:"name"            description:"姓名"`
