@@ -77,46 +77,51 @@ CREATE TABLE `tape_record` (
   INDEX `phone`(`phone`)
 )comment="录音记录" ENGINE=InnoDB;
 
-#录音地址
-DROP TABLE IF EXISTS `tape_record_files`;
-CREATE TABLE `tape_record_files` (
+
+
+#录音记录
+DROP TABLE IF EXISTS `tape_record`;
+CREATE TABLE `tape_record` (
   `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键,自增',
-  `record_url` VARCHAR(11) NULL DEFAULT "" COMMENT '',
-  `tape_id` int(11) NULL DEFAULT 0 COMMENT '关联录音记录id',
-  `sys_id` int(11) NULL DEFAULT 0 COMMENT '关联坐席id',
+  `name` VARCHAR(11) NULL DEFAULT "" COMMENT '姓名',
+  `phone` VARCHAR(11) NULL DEFAULT "" COMMENT '手机号',
+  `loan_money` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '借款金额',
+  `over_day` int(5) NULL DEFAULT 0 COMMENT '逾期天数',
+  `wait_money` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '待还金额',
+  `call_type` VARCHAR(50) NULL DEFAULT "" COMMENT '呼叫类型(实时状态)',
+  `call_class` VARCHAR(50) NULL DEFAULT "" COMMENT '呼入呼出类型',
+  `begin_time` DATETIME NULL DEFAULT NULL COMMENT '开始时间',
+  `end_time` DATETIME NULL DEFAULT NULL COMMENT '结束时间',
+  `duration_second` int(5) NULL DEFAULT 0 COMMENT '呼叫时长(秒)',
+  `user` VARCHAR(50) NULL DEFAULT "" COMMENT '坐席账号',
+  `password` VARCHAR(50) NULL DEFAULT "" COMMENT '坐席密码',
+  `session_id` VARCHAR(255) NULL DEFAULT "" COMMENT '通话标识',
   `create_time` DATETIME NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`),
-  INDEX `tapeId`(`tape_id`)
-)comment="录音地址" ENGINE=InnoDB;
+  INDEX `phone`(`phone`)
+)comment="录音记录" ENGINE=InnoDB;
 
 
-#费用减免审批
-DROP TABLE IF EXISTS `cost_relief_approve`;
-CREATE TABLE `cost_relief_approve` (
+
+#今日头条回调数据
+DROP TABLE IF EXISTS `toutiao_data`;
+CREATE TABLE `toutiao_data` (
   `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键,自增',
-  `uid` INT(11) NULL DEFAULT 0 COMMENT '用户id',
-  `phone` VARCHAR(20) NULL DEFAULT "" COMMENT '手机号',
-  `state` ENUM('NONE','AGREE','REFUSE','DONE') NULL DEFAULT "NONE" COMMENT '审批状态',
-  `rep_sch_id` INT(11) NULL DEFAULT 0 COMMENT '还款计划id',
-  `loan_id` INT(11) NULL DEFAULT 0 COMMENT '借款id',
-  `money` DECIMAL(10,2) NULL DEFAULT 0 COMMENT '减免金额',
-  `reason` VARCHAR(1024) NULL DEFAULT "" COMMENT '减免原因',
-  `approve_result` VARCHAR(1024) NULL DEFAULT "" COMMENT '审批结果',
-  `sys_id` int(11) NULL DEFAULT 0 COMMENT '审批人id',
-  `create_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-  PRIMARY KEY (`id`),
-  INDEX `uid`(`uid`)
-)comment="费用减免审批" ENGINE=InnoDB;
-
-#审批处理记录
-DROP TABLE IF EXISTS `cost_relief_approve_record`;
-CREATE TABLE `cost_relief_approve_record` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '主键,自增',
-  `cra_id` INT(11) NULL DEFAULT 0 COMMENT '审批id',
-  `old_approve_id` INT(11) NULL DEFAULT 0 COMMENT '原审批人id',
-  `new_approve_id` INT(11) NULL DEFAULT 0 COMMENT '新审批人id',
-  `source` ENUM('APPROVE','DISPOSE') NULL DEFAULT "APPROVE" COMMENT '来源于审批,处理', 
-  `opinion` VARCHAR(1024) NULL DEFAULT "" COMMENT '审批意见',
-  `create_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `aid` VARCHAR(50) NULL DEFAULT "" COMMENT '广告计划id',
+  `cid` VARCHAR(50) NULL DEFAULT "" COMMENT '广告创意id',
+  `imei` VARCHAR(50) NULL DEFAULT "" COMMENT '用户终端的imei',
+  `androidid` VARCHAR(50) NULL DEFAULT "" COMMENT '用户终端的androidid',
+  `timestamp`  VARCHAR(50) NULL DEFAULT "" COMMENT '时间戳',
+  `idfa` VARCHAR(50) NULL DEFAULT "" COMMENT 'ios适用ios6及以上',
+  `phone_type` ENUM('IOS','ANDROID','') NULL DEFAULT "" COMMENT '手机类型',
+  `create_time` DATETIME NULL DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-)comment="审批处理记录" ENGINE=InnoDB;
+)comment="今日头条回调数据" ENGINE=InnoDB;
+
+
+
+
+
+
+
+
