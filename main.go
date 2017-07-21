@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/astaxie/beego"
-	_ "sexy_api/logs"
 	_ "sexy_api/routers"
 )
 
