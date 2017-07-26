@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/astaxie/beego"
 	"sexy_api/models"
+	"sexy_api/utils"
 	"sexy_tools/tools"
 	"strconv"
 	"time"
@@ -25,7 +26,7 @@ func (this *AdminController) Post() {
 	var admin models.AdminInfo
 	err := json.Unmarshal(this.Ctx.Input.RequestBody, &admin)
 	if err != nil {
-		this.Data["json"] = tools.ParamError(err.Error())
+		this.Data["json"] = tools.ParamErrorMsg(err.Error())
 	} else {
 		nickname := admin.Nickname
 		headimgurl := admin.Headimgurl
@@ -74,7 +75,7 @@ func (this *AdminController) Put() {
 	var admin models.AdminInfo
 	err := json.Unmarshal(this.Ctx.Input.RequestBody, &admin)
 	if err != nil {
-		this.Data["json"] = tools.ParamError(err.Error())
+		this.Data["json"] = tools.ParamErrorMsg(err.Error())
 	} else {
 		if id := admin.Id; id < 1 {
 			this.Data["json"] = tools.ParamNull()
@@ -131,7 +132,7 @@ func (this *AdminController) Get() {
 	if id < 1 {
 		this.Data["json"] = tools.ParamNull()
 	} else {
-		status := models.Rc.Lock(strconv.FormatInt(id, 10), 3*time.Second)
+		status := utils.Rc.Lock(strconv.FormatInt(id, 10), 3*time.Second)
 		if status {
 			has, msg, admin := models.FindByIdAdmin(id)
 			if has {

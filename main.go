@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/astaxie/beego"
 	_ "sexy_api/routers"
+	_ "sexy_api/utils"
 )
 
 func main() {

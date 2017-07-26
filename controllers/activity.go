@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/astaxie/beego"
 	"sexy_api/models"
+	"sexy_api/utils"
 	"sexy_tools/tools"
 	"strconv"
 	"time"
@@ -25,7 +26,7 @@ func (this *ActivityController) Post() {
 	var _Activity models.ActivityInfo
 	err := json.Unmarshal(this.Ctx.Input.RequestBody, &_Activity)
 	if err != nil {
-		this.Data["json"] = tools.ParamError(err.Error())
+		this.Data["json"] = tools.ParamErrorMsg(err.Error())
 	} else {
 		title := _Activity.Title
 		content := _Activity.Content
@@ -75,7 +76,7 @@ func (this *ActivityController) Put() {
 	var _Activity models.ActivityInfo
 	err := json.Unmarshal(this.Ctx.Input.RequestBody, &_Activity)
 	if err != nil {
-		this.Data["json"] = tools.ParamError(err.Error())
+		this.Data["json"] = tools.ParamErrorMsg(err.Error())
 	} else {
 		if id := _Activity.Id; id == "" {
 			this.Data["json"] = tools.ParamNull()
@@ -103,7 +104,7 @@ func (this *ActivityController) Get() {
 		this.Data["json"] = tools.ParamNull()
 	}
 	if uid > 0 {
-		status := models.Rc.Lock(strconv.FormatInt(uid, 10), 3*time.Second)
+		status := utils.Rc.Lock(strconv.FormatInt(uid, 10), 3*time.Second)
 		beego.Info(status)
 		if status {
 			has, msg, _Activity := models.FindByIdActivity(uid)

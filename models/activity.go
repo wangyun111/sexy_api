@@ -7,7 +7,7 @@ import (
 
 //会员信息
 type ActivityInfo struct {
-	Id         bson.ObjectId `bson:"_id"          json:"_id"          description:"编号"`
+	Id         bson.ObjectId `bson:"_id"          json:"-"            description:"编号"`
 	Uid        int64         `bson:"uid"          json:"uid"          description:"用户编号"`
 	Title      string        `bson:"title"        json:"title"        description:"标题"`
 	Cover      string        `bson:"cover"        json:"cover"        description:"封面"`
