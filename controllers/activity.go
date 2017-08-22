@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-// 会员模块
+// 活动模块
 type ActivityController struct {
 	beego.Controller
 }

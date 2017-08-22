@@ -4,19 +4,19 @@ import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	"sexy_tools/time"
-	"strconv"
+	// "strconv"
 )
 
 //会员信息
 type AdminInfo struct {
 	Id         int64  `json:"-"               description:"编号"`
 	Nickname   string `json:"nickName"        description:"*昵称"`
-	Headimgurl string `json:"headimgurl,omitempty"      description:"*头像"`
+	Headimgurl string `json:"headimgurl"      description:"*头像"`
 	Name       string `json:"name"            description:"姓名"`
 	Phone      string `json:"phone"           description:"电话"`
 	Email      string `json:"email"           description:"邮箱"`
 	Address    string `json:"address"         description:"地址"`
-	Account    string `json:"account,tel"         description:"账号"`
+	Account    string `json:"account"         description:"账号"`
 	Password   string `json:"password"        description:"密码"`
 	Remark     string `json:"remark"          description:"备注(预留信息)"`
 	IsUse      string `json:"isUse"           description:"是否使用"`
@@ -95,55 +95,55 @@ func UpdateAdmin(_Admin *AdminInfo) (has bool, msg string) {
 	return
 }
 
-func QueryAdmin(pageNo, pageSize int64, nickname, name, phone string) (has bool, msg string, page *Page) {
-	has = true
-	msg = "success"
-	if pageNo < 1 {
-		pageNo = 1
-	}
-	if pageSize < 1 {
-		pageSize = 20
-	}
-	o := orm.NewOrm()
-	var _err error
-	var countModel CountModel
-	countSql := " select count(*) as count from admin_info where 1=1 "
-	sql := "select id,nickname,headimgurl,name,phone,email,address,account,password,remark,is_use,create_time from admin_info where 1=1 "
-	if nickname != "" {
-		countSql += " and nickname like '%" + nickname + "%'"
-		sql += " and nickname like '%" + nickname + "%'"
-	}
-	if name != "" {
-		countSql += " and name  like '%" + name + "%'"
-		sql += " and name like '%" + name + "%'"
-	}
-	if phone != "" {
-		countSql += " and phone like '%" + phone + "%'"
-		sql += " and phone like '%" + phone + "%'"
-	}
-	_err = o.Raw(countSql).QueryRow(&countModel)
-	beego.Info(_err)
-	count := countModel.Count
-	if count == 0 {
-		has = false
-		msg = ""
-		if _err != nil {
-			msg = _err.Error()
-		}
-		return
-	}
-	sql += " order by create_time desc LIMIT " + strconv.FormatInt(pageSize, 10) + " OFFSET " + strconv.FormatInt((pageNo-1)*pageSize, 10)
-	var list []AdminInfo
-	_, _err = o.Raw(sql).QueryRows(&list)
-	beego.Info(_err)
-	if _err != nil {
-		has = false
-		msg = _err.Error()
-		return
-	}
-	page = PageUtil(count, pageNo, pageSize, list)
-	return
-}
+// func QueryAdmin(pageNo, pageSize int64, nickname, name, phone string) (has bool, msg string, page *Page) {
+// 	has = true
+// 	msg = "success"
+// 	if pageNo < 1 {
+// 		pageNo = 1
+// 	}
+// 	if pageSize < 1 {
+// 		pageSize = 20
+// 	}
+// 	o := orm.NewOrm()
+// 	var _err error
+// 	var countModel CountModel
+// 	countSql := " select count(*) as count from admin_info where 1=1 "
+// 	sql := "select id,nickname,headimgurl,name,phone,email,address,account,password,remark,is_use,create_time from admin_info where 1=1 "
+// 	if nickname != "" {
+// 		countSql += " and nickname like '%" + nickname + "%'"
+// 		sql += " and nickname like '%" + nickname + "%'"
+// 	}
+// 	if name != "" {
+// 		countSql += " and name  like '%" + name + "%'"
+// 		sql += " and name like '%" + name + "%'"
+// 	}
+// 	if phone != "" {
+// 		countSql += " and phone like '%" + phone + "%'"
+// 		sql += " and phone like '%" + phone + "%'"
+// 	}
+// 	_err = o.Raw(countSql).QueryRow(&countModel)
+// 	beego.Info(_err)
+// 	count := countModel.Count
+// 	if count == 0 {
+// 		has = false
+// 		msg = ""
+// 		if _err != nil {
+// 			msg = _err.Error()
+// 		}
+// 		return
+// 	}
+// 	sql += " order by create_time desc LIMIT " + strconv.FormatInt(pageSize, 10) + " OFFSET " + strconv.FormatInt((pageNo-1)*pageSize, 10)
+// 	var list []AdminInfo
+// 	_, _err = o.Raw(sql).QueryRows(&list)
+// 	beego.Info(_err)
+// 	if _err != nil {
+// 		has = false
+// 		msg = _err.Error()
+// 		return
+// 	}
+// 	page = PageUtil(count, pageNo, pageSize, list)
+// 	return
+// }
 
 func FindByIdAdmin(id int64) (has bool, msg string, _Admin AdminInfo) {
 	has = true

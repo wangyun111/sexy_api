@@ -37,7 +37,11 @@ func DeleteActivity(uid int64) (has bool, msg string) {
 	var _Activity *ActivityInfo
 	session := GetSession()
 	c := session.DB(DataBase).C("activity_info")
-	err := c.Find(&bson.M{"uid": uid}).One(&_Activity)
+	sbson := bson.M{}
+	if uid > 0 {
+		sbson["uid"] = uid
+	}
+	err := c.Find(&sbson).One(&_Activity)
 	if err != nil {
 		has = false
 		msg = err.Error()

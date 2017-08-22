@@ -7,7 +7,7 @@ import (
 	"sexy_tools/tools"
 )
 
-// 会员模块
+// 管理员模块
 type SysUsersController struct {
 	beego.Controller
 }
@@ -19,7 +19,14 @@ type SysUsersController struct {
 // @Failure 201     {string}      code              201
 // @router / [post]
 func (this *SysUsersController) Post() {
-	defer this.ServeJSON()
+	errmsg := ""
+	defer func() {
+		if errmsg != "" {
+			errmsg = "SysUsersController,Post:" + errmsg
+			beego.Info(errmsg)
+		}
+		this.ServeJSON()
+	}()
 	var _SysUsers models.SysUsers
 	err := json.Unmarshal(this.Ctx.Input.RequestBody, &_SysUsers)
 	if err != nil {
@@ -34,6 +41,7 @@ func (this *SysUsersController) Post() {
 	}
 	_, err = models.AddSysUsers(_SysUsers)
 	if err != nil {
+		errmsg += err.Error()
 		this.Data["json"] = tools.OperationFalseMsg(err.Error())
 		return
 	}
@@ -42,12 +50,19 @@ func (this *SysUsersController) Post() {
 
 // @Summary 删除管理员
 // @Description
-// @Param	id     query 	  int	    true		"主键id"
+// @Param	id     query 	  int	    true		"主键 id"
 // @Success 200    {string}   code      200
 // @Failure 201    {string}   code      201
 // @router / [delete]
 func (this *SysUsersController) Delete() {
-	defer this.ServeJSON()
+	errmsg := ""
+	defer func() {
+		if errmsg != "" {
+			errmsg = "SysUsersController,Delete:" + errmsg
+			beego.Info(errmsg)
+		}
+		this.ServeJSON()
+	}()
 	id, _ := this.GetInt64("id")
 	if id < 1 {
 		this.Data["json"] = tools.ParamNull()
@@ -55,6 +70,7 @@ func (this *SysUsersController) Delete() {
 	}
 	_, err := models.DeleteByIdSysUsers(id)
 	if err != nil {
+		errmsg += err.Error()
 		this.Data["json"] = tools.OperationFalseMsg(err.Error())
 		return
 	}
@@ -68,7 +84,14 @@ func (this *SysUsersController) Delete() {
 // @Failure 201 {string} code 201
 // @router / [put]
 func (this *SysUsersController) Put() {
-	defer this.ServeJSON()
+	errmsg := ""
+	defer func() {
+		if errmsg != "" {
+			errmsg = "SysUsersController,Put:" + errmsg
+			beego.Info(errmsg)
+		}
+		this.ServeJSON()
+	}()
 	var _SysUsers models.SysUsers
 	err := json.Unmarshal(this.Ctx.Input.RequestBody, &_SysUsers)
 	if err != nil {
@@ -82,6 +105,7 @@ func (this *SysUsersController) Put() {
 	}
 	_, err = models.UpdateByIdSysUsers(_SysUsers)
 	if err != nil {
+		errmsg += err.Error()
 		this.Data["json"] = tools.ParamErrorMsg(err.Error())
 		return
 	}
@@ -94,14 +118,20 @@ func (this *SysUsersController) Put() {
 // @Param	pageSize	query    	int 	      flase		"条数"
 // @Param	name	    query 	    string	      false		"姓名"
 // @Param	account	    query 	    string	      false		"账号"
-// @Param	sort	    query 	    string	      false		"排序方式(createTime 时间倒序)"
-// @Success 200         {object}    models.Page
+// @Param	sort	    query 	    string	      false		"排序方式(传了createTime 时间倒序)"
+// @Success 200         {object}    models.SysUsers
 // @Failure 203         {string}    code 203
 // @router /all [get]
 func (this *SysUsersController) GetAll() {
-	defer this.ServeJSON()
-	args := []interface{}{}
 	errmsg := ""
+	defer func() {
+		if errmsg != "" {
+			errmsg = "SysUsersController,GetAll:" + errmsg
+			beego.Info(errmsg)
+		}
+		this.ServeJSON()
+	}()
+	args := []interface{}{}
 	where := ""
 	name := this.GetString("name")
 	if name != "" {
@@ -137,10 +167,6 @@ func (this *SysUsersController) GetAll() {
 	if err != nil {
 		errmsg += err.Error()
 	}
-	if errmsg != "" {
-		errmsg = "SysUsersController,GetAll:" + errmsg
-		beego.Info(errmsg)
-	}
 	page := models.PageUtil(count, pageNo, pageSize, list)
 	this.Data["json"] = page
 }
@@ -148,12 +174,18 @@ func (this *SysUsersController) GetAll() {
 // @Summary 获取单个管理员信息
 // @Description
 // @Param	 id	     query 	    int	      true		"主键 id"
-// @Success 200 {object} models.SysUsers
-// @Failure 203 {string} code 203
+// @Success 200      {object} models.SysUsers
+// @Failure 203      {string} code 203
 // @router / [get]
 func (this *SysUsersController) Get() {
-	defer this.ServeJSON()
 	errmsg := ""
+	defer func() {
+		if errmsg != "" {
+			errmsg = "SysUsersController,Get:" + errmsg
+			beego.Info(errmsg)
+		}
+		this.ServeJSON()
+	}()
 	id, _ := this.GetInt64("id")
 	if id < 1 {
 		this.Data["json"] = tools.ParamNull()
@@ -163,7 +195,7 @@ func (this *SysUsersController) Get() {
 	if err != nil {
 		errmsg = err.Error()
 		if errmsg != "<QuerySeter> no row found" {
-			beego.Info(errmsg)
+			errmsg += err.Error()
 		}
 		this.Data["json"] = tools.ReturnDataNull()
 		return

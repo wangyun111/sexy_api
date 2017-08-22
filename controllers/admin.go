@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"encoding/json"
-	"github.com/astaxie/beego"
+	// "github.com/astaxie/beego"
 	"sexy_api/models"
 	"sexy_api/utils"
 	"sexy_tools/tools"
@@ -100,25 +100,25 @@ func (this *AdminController) Put() {
 // @Success 200 {object} models.Page
 // @Failure 204 {string} code 204
 // @router /all [get]
-func (this *AdminController) GetAll() {
-	defer this.ServeJSON()
-	pageNo, _ := this.GetInt64("pageNo")
-	pageSize, _ := this.GetInt64("pageSize")
-	nickname := this.GetString("nickname")
-	name := this.GetString("name")
-	phone := this.GetString("phone")
-	has, msg, page := models.QueryAdmin(pageNo, pageSize, nickname, name, phone)
-	beego.Info(msg)
-	if has {
-		this.Data["json"] = page
-	} else {
-		if msg != "" {
-			this.Data["json"] = tools.OperationFalseMsg(msg)
-		} else {
-			this.Data["json"] = tools.ReturnDataNull()
-		}
-	}
-}
+// func (this *AdminController) GetAll() {
+// 	defer this.ServeJSON()
+// 	pageNo, _ := this.GetInt64("pageNo")
+// 	pageSize, _ := this.GetInt64("pageSize")
+// 	nickname := this.GetString("nickname")
+// 	name := this.GetString("name")
+// 	phone := this.GetString("phone")
+// 	has, msg, page := models.QueryAdmin(pageNo, pageSize, nickname, name, phone)
+// 	beego.Info(msg)
+// 	if has {
+// 		this.Data["json"] = page
+// 	} else {
+// 		if msg != "" {
+// 			this.Data["json"] = tools.OperationFalseMsg(msg)
+// 		} else {
+// 			this.Data["json"] = tools.ReturnDataNull()
+// 		}
+// 	}
+// }
 
 // @Summary 获取会员信息
 // @Description
