@@ -8,16 +8,16 @@
 package routers
 
 import (
-	"sexy_api/controllers"
-
 	"github.com/astaxie/beego"
+	"sexy_api/controllers"
+	"sexy_api/controllers/system"
 )
 
 func init() {
 	ns := beego.NewNamespace("/v1",
 		beego.NSNamespace("/system/users", beego.NSInclude(&controllers.SysUsersController{})),
 		beego.NSNamespace("/activity", beego.NSInclude(&controllers.ActivityController{})),
-		beego.NSNamespace("/admin", beego.NSInclude(&controllers.AdminController{})),
+		beego.NSNamespace("/admin", beego.NSInclude(&system.AdminController{})),
 		beego.NSNamespace("/cost/approve", beego.NSInclude(&controllers.CostReliefApproveController{})),
 	)
 	beego.AddNamespace(ns)

@@ -1,8 +1,9 @@
-package controllers
+package system
 
 import (
 	"encoding/json"
 	// "github.com/astaxie/beego"
+	"sexy_api/controllers"
 	"sexy_api/models"
 	"sexy_api/utils"
 	"sexy_tools/tools"
@@ -12,7 +13,7 @@ import (
 
 // 会员模块
 type AdminController struct {
-	BaseController
+	controllers.BaseController
 }
 
 // @Summary 添加会员

@@ -40,5 +40,5 @@ func WitchCollection(collection string, s func(*mgo.Collection) error) error {
 
 func init() {
 	fmt.Println("mgo start")
-	MgoSession = GetSession()
+	// MgoSession = GetSession()
 }
